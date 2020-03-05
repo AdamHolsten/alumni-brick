@@ -1,13 +1,13 @@
 
 var options = {
   valueNames: [ 'project-name', 'project-title', 'project-label' ],
-  page: 6,
+  page: 2,
   pagination: {
     innerWindow: 1,
     left: 0,
     right: 0,
     paginationClass: "pagination",
-    }
+    },
 };
 
 var userList = new List('sandbox', options);
