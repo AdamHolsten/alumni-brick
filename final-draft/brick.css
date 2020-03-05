@@ -1,157 +1,237 @@
 #alumni-header{padding: 100px 0 110px;margin-bottom:20px;
-    background-color:
-        #dedede;
-    }
-#alumni-header h1{color:white;text-align: center;}
+  background-color:
+      #dedede;
+  }
+#alumni-header h1{color:white!important;text-align: center;}
 #alumni-header .search{padding: 20px;
-    border: 0;padding: 20px;
-    border-radius: 0;
-    font-size: 18px;
-    font-style: italic;
-    margin: 0 auto;display: block;max-width: 880px;
-    }
+  border: 0;padding: 20px;
+  border-radius: 0;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto;display: block;max-width: 880px;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4f4f4f;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #4f4f4f;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #4f4f4f;
+  }
+
 #search-body{max-width: 1130px;margin: 0 auto;display: block;}
-#sort-container{position: absolute;right: 0;}
+#search-results-label{float: left;
+
+  resize: none;
+  border: 0;
+  color:
+  #3e3e3e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  line-height: 18px;}
+#search-results{float: left;
+  width: 300px;
+  resize: none;
+  border: 0;
+  color:
+  #3e3e3e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  line-height: 18px;}
+#sort-container{position: absolute;right: 0;width:260px}
+
+#sort {
+display: block;
+color:
+#3e3e3e;
+font-family: 'Open Sans', sans-serif;
+font-size: 19px;
+line-height: 35px;
+margin-top: 0;
+
+padding: 14px 16px 13px;
+width: 100%;
+max-width: 100%;
+box-sizing: border-box;
+margin: 0;
+border: 1px solid #e4e4e4;
+
+border-radius: .5em;
+-moz-appearance: none;
+-webkit-appearance: none;
+appearance: none;
+background-color: #fff;
+background-image: url('http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/down-arrow.png');
+background-repeat: no-repeat, repeat;
+background-position: right .7em top 50%, 0 0;
+
+}
+#sort::-ms-expand {
+display: none;
+}
+#sort:hover {
+border-color: #888;
+}
+#sort:focus {
+border-color: #aaa;
+box-shadow: 0 0 1px 3px aaa;
+box-shadow: 0 0 0 3px -moz-mac-focusring;
+color: #222;
+outline: none;
+}
+#sort option {
+font-weight:normal;
+}
+
+
 
 #search-returns{position: relative;}
 #search-returns p{width: 80%;
-    float: left;}
+  float: left;}
 
 
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-      
+  .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
 hr{border-color: #d3d3d3;}
 #brick-grid{
-    padding-top:200px;max-width: 1200px;
+  padding-top:200px;max-width: 1200px;
 margin: 0 auto;
 padding-bottom: 50px;
-  }
+}
 .brick-photo{max-width: 250px;width: 100%;height: auto;margin: 0;padding-right: 40px;      float: left;}
 .brick-details{float: left;}
 .brick-location{position: absolute;
-    right: 60px;
-    text-align: center;}
-.brick-location a{color:#3d82ac;text-transform: uppercase;}
+  right: 60px;
+  text-align: center;}
+.brick-location a{color:#3d82ac;text-transform: uppercase;font-size: 14px;text-decoration: underline;}
+.brick-location img{max-width: 160px;}
 
-    .arrow-icon {
-  background-color: black;
-  display: inline-block;
-  width:30px;height:30px;
-  padding: 0 30px 30px 0;float:left;
-      transform: rotate(-135deg)!important;
-      -webkit-transform: rotate(-135deg)!important;
-   
-  }
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-
-  .highlight{
-  background-color: red!important;}
-  body{margin: 0;}
-    #sandbox {
-      margin: 0px;
-    }
-    
-    #sandbox input {
-      border: solid 1px #ccc;
-      border-radius: 5px;
-      padding: 7px 14px;
-      margin-bottom: 10px;
-      width: 50%;
-    }
-    #sandbox input:focus {
-      outline: none;
-      border-color: #aaa;
-    }
-    
-    
-    .list {
-      margin: 0;
-      padding: 20px 0 0;
-    }
-    .list li {
-      display: block;
-      background-color: #eee;
-      padding: 10px;
-      box-shadow: inset 0 1px 0 #fff;
-position: relative;
-      margin-bottom: 10px;
-    }
-
-    .list li h3 {
-      font-size: 2em;
-      margin: 0 0 0.3rem;
-      font-weight: 600;
-    }
-    .list li .project-title {
-      margin: 0;
-      font-weight: 400;
-      font-size: 1.5em;
-    }
-    .list li .project-label {
-      margin: 0;
-
-    }
-    .list li i {
-      float: right;
-      color: black;
-      display: block;
-    }
-    .list li i:hover {
-      color: #3498db;
-    }
-    
-    .brick-grid-content {
-      list-style: none;
-    }
+  .arrow-icon {
+background-color: black;
+display: inline-block;
+width:30px;height:30px;
+padding: 0 30px 30px 0;float:left;
+    transform: rotate(-135deg)!important;
+    -webkit-transform: rotate(-135deg)!important;
  
-    .brick-grid-content li {
-      width: 100%;
-      max-width: 1080px;
-      display: inline-block;
-      background-color:#f1f1f1;
-      box-shadow: inset 0 1px 0 #fff;
-      margin-bottom: 20px;
-      padding:25px;min-height: 140px;
-    }
-  
-    .brick-grid-content li h3 {
-      font-size: 20px;
-      padding: 20px 0 15px;
-      margin: 0;
-      font-weight: 600;
-    }
-    .brick-grid-content li .project-title {
-      margin: 0;
-      margin-bottom: 5px;
-      font-weight: 400;
-      font-size: 20px;
-    }
-    .brick-grid-content li .project-label {
-      margin: 0;
-      font-size: 20px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-    }
-    .brick-grid-content li i {
-      float: right;
-      margin: 0 10px 0 0;
-      color: black;
-      display: block;
-    }
-    .brick-grid-content li i:hover {
-      color: #3498db;
-    }
-    
-    .jscroll {
-      height: 700px;
-      overflow-y: scroll;
-      border: 1px solid black;
-    }
+
+.highlight{
+background-color: red!important;}
+body{margin: 0;}
+  #sandbox {
+    margin: 0px;
+  }
+  
+  #sandbox input {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 7px 14px;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  #sandbox input:focus {
+    outline: none;
+    border-color: #aaa;
+  }
+  
+  
+  .list {
+    margin: 0;
+    padding: 20px 0 0;
+  }
+  .list li {
+    display: block;
+    background-color: #eee;
+    padding: 10px;
+    box-shadow: inset 0 1px 0 #fff;
+position: relative;
+    margin-bottom: 10px;
+  }
+
+  .list li h3 {
+    font-size: 2em;
+    margin: 0 0 0.3rem;
+    font-weight: 600;
+  }
+  .list li .project-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+  .list li .project-label {
+    margin: 0;
+
+  }
+  .list li i {
+    float: right;
+    color: black;
+    display: block;
+  }
+  .list li i:hover {
+    color: #3498db;
+  }
+  
+  .brick-grid-content {
+    list-style: none;
+  }
+
+  .brick-grid-content li {
+    width: 100%;
+    max-width: 1080px;
+    display: inline-block;
+    background-color:#f1f1f1;
+    box-shadow: inset 0 1px 0 #fff;
+    margin-bottom: 20px;
+    padding:25px;min-height: 140px;
+  }
+
+  .brick-grid-content li h3 {
+    font-size: 19px!important;
+    padding: 20px 0 15px;
+    margin: 0!important;
+    font-family: 'Open Sans', sans-serif!important;
+    font-weight: 600;
+  }
+  .brick-grid-content li .project-title {
+    margin: 0;
+    margin-bottom: 5px!important;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px !important;
+  }
+  .brick-grid-content li .project-label {
+    margin: 0!important;
+    font-size: 20px;
+
+  }
+  .brick-grid-content li i {
+    float: right;
+    margin: 0 10px 0 0;
+    color: black;
+    display: block;
+  }
+  .brick-grid-content li i:hover {
+    color: #3498db;
+  }
+  
+  .jscroll {
+    height: 700px;
+    overflow-y: scroll;
+    border: 1px solid black;
+  }
