@@ -1,0 +1,165 @@
+<!-- 
+Keyup javascript function
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onkeyup -->
+
+
+
+<head>
+    <link rel="stylesheet" href="https://pages.tcnj.edu/wp-content/themes/headway-tcnj-schools/css/brick.css">
+    <!-- <link rel="stylesheet" href="brick.css"> -->
+ 
+ </head>
+ <body>
+    <div style="clear:both" id="sandbox">
+       <div id="alumni-header">
+          <h1>Alumni Brick Locator</h1>
+          <input class="search" type="text" onkeyup="copySearch()"; placeholder="Search by Name, Graduation Year or Brick Location" />
+       </div>
+       <div id="search-body">
+          <div class="clearfix" id="search-returns">
+             <div><span id="search-results-label" style="float:left;">Search results for: </span> <textarea id="search-results" readonly  name="my_text" ></textarea><span></span></div>
+             <div id="sort-container">
+                <span style="float: left;">Sort By </span>
+                <select id="sort">
+                   <option class="sort" data-sort="project-name">
+                      Name
+                   </option>
+                   <option class="sort" data-sort="project-title">
+                      Graduation Year
+                   </option>
+                   <option class="sort" data-sort="project-label">
+                      Brick Location
+                   </option>
+                </select>
+             </div>
+          </div>
+          <hr style="margin:0;"/>
+          <div class="page-numbers"><span style="float: left;
+
+          margin-top: 4px;">Browse Alumni Bricks</span><ul class="pagination"></ul></div>
+          <ul class="list brick-grid-content">
+           
+
+<li>
+    <img class="brick-photo" src="https://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/	DSC_0574.jpg	"" alt="brick"/>
+    <div class="brick-details">
+       <h3 class="project-name">Bill Cahill</h3>
+       <p class="project-title">Graduating Year:	2005	2009</p>
+       <p class="project-label">Brick location: 	A</p>
+    </div>
+    <div class="brick-location">
+       <a href="">
+       <img src="http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-location-e.jpg" alt="brick location"></a>
+       <p><a href="">View Larger</a></p>
+    </div>
+ </li>
+ <li>
+    <img class="brick-photo" src="https://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/DSC_0573.jpg	" alt="brick"/>	
+    <div class="brick-details">
+       <h3 class="project-name">Terri Martinac</h3>
+       <p class="project-title">Graduating Year: 1972	1973</p>
+       <p class="project-label">Brick location: 	A</p>
+    </div>
+    <div class="brick-location">
+       <a href="">
+       <img src="http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-location-e.jpg" alt="brick location"></a>
+       <p><a href="">View Larger</a></p>
+    </div>
+ </li>
+ <li>
+    <img class="brick-photo" src="https://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/DSC_0576.jpg" alt="brick"	/>	
+    <div class="brick-details">
+       <h3 class="project-name">Michelle Rende</h3>
+       <p class="project-title">Graduating Year: 1990</p>
+       <p class="project-label">Brick location: 		A</p>
+    </div>
+    <div class="brick-location">
+       <a href="">
+       <img src="http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-location-e.jpg" alt="brick location"></a>
+       <p><a href="">View Larger</a></p>
+    </div>
+ </li>
+ <li>
+    <img class="brick-photo" src="https://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/DSC_0576.jpg" alt="brick"	/>	
+    <div class="brick-details">
+       <h3 class="project-name">Tom Rende</h3>
+       <p class="project-title">Graduating Year: 1967	</p>
+       <p class="project-label">Brick location: 	A</p>
+    </div>
+    <div class="brick-location">
+       <a href="">
+       <img src="http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-location-e.jpg" alt="brick location"></a>
+       <p><a href="">View Larger</a></p>
+    </div>
+ </li>
+ <li>
+    <img class="brick-photo" src="https://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/DSC_0572.jpg	" alt="brick"/>	
+    <div class="brick-details">
+       <h3 class="project-name">Jonathan Peck</h3>
+       <p class="project-title">Graduating Year: 1996	</p>
+       <p class="project-label">Brick location: 	A</p>
+    </div>
+    <div class="brick-location">
+       <a href="">
+       <img src="http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-location-e.jpg" alt="brick location"></a>
+       <p><a href="">View Larger</a></p>
+    </div>
+ </li>
+ <li>
+    <img class="brick-photo" src="https://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/DSC_0571.jpg	" alt="brick"/>	
+    <div class="brick-details">
+       <h3 class="project-name">Gregory Bellotti</h3>
+       <p class="project-title">Graduating Year: 1992</p>
+       <p class="project-label">Brick location: 		A</p>
+    </div>
+    <div class="brick-location">
+       <a href="">
+       <img src="http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-location-e.jpg" alt="brick location"></a>
+       <p><a href="">View Larger</a></p>
+    </div>
+ </li>
+ <li>
+    <img class="brick-photo" src="https://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/DSC_0579.jpg	" alt="brick"/>	
+    <div class="brick-details">
+       <h3 class="project-name">PJ Brateiris</h3>
+       <p class="project-title">Graduating Year: 1966</p>
+       <p class="project-label">Brick location: 		A</p>
+    </div>
+    <div class="brick-location">
+       <a href="">
+       <img src="http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-location-e.jpg" alt="brick location"></a>
+       <p><a href="">View Larger</a></p>
+    </div>
+ </li>
+ <li>
+    <img class="brick-photo" src="https://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/DSC_0578.jpg	" alt="brick"/>	
+    <div class="brick-details">
+       <h3 class="project-name">Brian Reingold</h3>
+       <p class="project-title">Graduating Year: 1988</p>
+       <p class="project-label">Brick location: 		A</p>
+    </div>
+    <div class="brick-location">
+       <a href="">
+       <img src="http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-location-e.jpg" alt="brick location"></a>
+       <p><a href="">View Larger</a></p>
+    </div>
+ </li>
+ 
+         </ul>
+       </div>
+       <span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start"></span></p>
+    </div>
+    </div>
+    <script>function copySearch()
+       {
+       document.getElementById("search-results").value=document.querySelector(".search").value;
+       }</script>
+    <!-- <script src="https://pages.tcnj.edu/wp-content/themes/headway-tcnj-schools/js/list.min.js"></script>
+    <script src="https://pages.tcnj.edu/wp-content/themes/headway-tcnj-schools/js/search-init.js"></script> -->
+    
+ <!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+ <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script> -->
+ </body>
+ 
+ 
