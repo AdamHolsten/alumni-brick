@@ -1,7 +1,16 @@
 #alumni-header{padding: 100px 0 110px;margin-bottom:20px;
   background-color:
       #dedede;
+      background-image: url('http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-heading.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
+
+ .page-id-10534 #block-bj7562115fb995d3 {
+    min-height: 60px!important;
+}
+
 #alumni-header h1{color:white!important;text-align: center;}
 #alumni-header .search{padding: 20px;
   border: 0;padding: 20px;
@@ -23,7 +32,9 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #4f4f4f;
   }
+.pagination{text-align: center;display: block;
 
+  margin-top: 4px;}
   .pagination li {
     display:inline-block;
     padding:5px;
@@ -182,11 +193,7 @@ position: relative;
     margin: 0 0 0.3rem;
     font-weight: 600;
   }
-  .list li .project-title {
-    margin: 0;
-    font-weight: 400;
-    font-size: 1.5em;
-  }
+
   .list li .project-label {
     margin: 0;
 
@@ -227,6 +234,10 @@ position: relative;
     font-weight: 400;
     font-size: 20px;
     line-height: 18px !important;
+    color:
+    #3e3e3e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
   }
   .brick-grid-content li .project-label {
     margin: 0!important;
