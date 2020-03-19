@@ -4,7 +4,16 @@ var monkeyList = new List('sandbox', {
   pagination: true
 });
 
-
+$('#sort').change(function () {
+  var selection = this.value;
+  if (selection) {
+      featureList.filter(function (item) {
+          return (item.values().material == selection);
+      });
+  } else {
+      featureList.filter();
+  }
+});
 
 // var options = {
 //   valueNames: [ 'project-name', 'project-title', 'project-label' ],

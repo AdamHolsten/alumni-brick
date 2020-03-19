@@ -17,7 +17,7 @@
 	.st11{opacity:0.5;fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
 	.st12{opacity:0.9;fill:#FFFFFF;}
 	.st13{opacity:0.75;fill:#FFFFFF;}
-	.st14{fill:#FFFFFF;}
+	.st14{fill:##f1f1f1;}
 	.st15{fill:none;stroke:#414042;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st16{opacity:0.9;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 	.st17{fill:#939598;}
