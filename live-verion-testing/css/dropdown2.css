@@ -16,8 +16,8 @@
 }
 
 .custom-select {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   /* border-width: 0 2px 0 2px;
   border-style: solid;
   border-color: #394a6d; */
