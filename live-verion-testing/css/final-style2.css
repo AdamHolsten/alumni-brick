@@ -288,8 +288,17 @@ padding:100px}
     font-weight: 600;}
 
     .pagination .active{    text-decoration: underline!important;}
+/* 
+MEDIA QUERIES */
+
+.desktop{display:inline-block;}
+.mobile{display: none;}
 
 @media screen and (max-width: 750px) {
+    .desktop{display:none;}
+    .mobile{display: inline-block;}
+    #search-returns, .brick-location img{display: none;}
+    
     .project-name{text-align:center!important;}
     .brick-photo{
         margin: 0 auto;
@@ -302,13 +311,10 @@ padding:100px}
     .brick-details{text-align: center;float:none}
     .brick-location {
         position: static;
-        right: 0;
+
         margin: 0 auto;
         text-align: center;
-        width: 160px;
-        margin-top: 40px;
-    border-top: 2px solid #7d7f80;
-    padding-top: 40px;
+
     }
     .brick-grid-content li{width:98%;padding:25px 2%}
     #search-results-label{float: none;
