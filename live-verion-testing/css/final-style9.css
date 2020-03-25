@@ -293,13 +293,16 @@ padding:100px}
 }
 
 .featherlight .featherlight-close-icon{
-  color: #17181a!important;
-  top: 35px;
-right: 40px;font-size: 45px;font-weight: normal;
-background-image: url(http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-close.png);
-background-repeat: no-repeat, repeat;
-background-position: left 2em top 50%, 0 0;
-color: transparent;  background-size: 35px 35px;
+
+    background-image: url(http://alumni.tcnj.edu/wp-content/uploads/sites/16/2020/03/brick-close.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: left 2em top 50%, 0 0 !important;
+    color: transparent !important;
+    background-size: 30px 30px !important;
+    width: 30px !important;
+    height: 30px !important;
+    top: 30px!important;
+right: 30px!important;
 }
 
 .page-numbers{padding-top: 40px;
