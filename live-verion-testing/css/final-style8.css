@@ -292,6 +292,12 @@ padding:100px}
     height: auto!important;
 }
 
+.featherlight .featherlight-close-icon{
+  color: #17181a!important;
+  top: 35px;
+right: 40px;font-size: 45px;font-weight: normal;
+}
+
 .page-numbers{padding-top: 40px;
   padding-bottom: 55px;}
 
