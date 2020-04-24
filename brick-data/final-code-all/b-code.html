@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="https://tcnj.edu/wp-content/themes/alumni-brick/css/final-style19.css">
+<link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+<div style="clear:both" id="sandbox">
+    <div id="alumni-header">
+        <h1>Alumni Brick Locator</h1>
+        <input class="search" type="text" onkeyup="copySearch()" ; placeholder="Search by Name or Graduation Year" />
+    </div>
+    <div id="search-body">
+        <div class="clearfix" id="search-returns">
+            <div><span id="search-results-label" style="float:left;">Search results for: </span> <textarea
+                    id="search-results" readonly name="my_text"></textarea><span></span></div>
+            <div id="sort-container">
+                <p class="sort-title">Sort by: </p>
+                <div class="container">
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <div class="custom-select__trigger"><span>Name</span>
+                            </div>
+                            <div class="custom-options" id="sort">
+                                <span class="custom-option sort selected"
+                                    data-sort="project-name-last">Name<br /></span>
+                                <span class="custom-option sort" data-sort="project-title" id="grad-year">Graduation
+                                    Year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin:0;" />
+        <ul class="list brick-grid-content" id="myList">
+
+        </ul>
+        <p id="not-found" style="display:none">Unable to locate any bricks by those search terms. For better
+            results, search by last name or graduating year.<br />
+            <br />Interested in purchasing a brick? Contact <a href="mailto:buber2@tcnj.edu">buber2@tcnj.edu</a>
+            or sign up via the links below: <br /><br />
+            <a class="hi-brand-button" target="_blank" style="padding:10px 15px!important"
+                href="https://tcnj.co1.qualtrics.com/jfe/form/SV_aVRiErW3Cpk9yIZ">Buy a 4x8 Brick</a>
+            <a class="hi-brand-button" target="_blank" style="padding:10px 15px!important"
+                href="https://tcnj.co1.qualtrics.com/jfe/form/SV_71J3t8zJJKVGsvj">Buy a 8x8 Brick</a>
+        </p>
+        <div class="page-numbers">
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+    <span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark"
+        class="mce_SELRES_start"></span></p>
+</div>
+<script>function copySearch() {
+        document.getElementById("search-results").value = document.querySelector(".search").value;
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="https://tcnj.edu/wp-content/themes/alumni-brick/js/dropdown.js"></script>
+<script src="https://tcnj.edu/wp-content/themes/alumni-brick/js/search-init-final5.js"></script>
+
+<script>function copySearch() {
+        document.getElementById("search-results").value = document.querySelector(".search").value;
+        var list = document.getElementById("myList");
+        var x = document.getElementById("not-found");
+
+        if (list.hasChildNodes()) {
+
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+
+        }
+
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript"
+    charset="utf-8"></script>

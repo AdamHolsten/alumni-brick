@@ -1,0 +1,809 @@
+<link rel="stylesheet" href="https://tcnj.edu/wp-content/themes/alumni-brick/css/final-style19.css">
+<link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+<div style="clear:both" id="sandbox">
+    <div id="alumni-header">
+        <h1>Alumni Brick Locator</h1>
+        <input class="search" type="text" onkeyup="copySearch()" ; placeholder="Search by Name or Graduation Year" />
+    </div>
+    <div id="search-body">
+        <div class="clearfix" id="search-returns">
+            <div><span id="search-results-label" style="float:left;">Search results for: </span> <textarea
+                    id="search-results" readonly name="my_text"></textarea><span></span></div>
+            <div id="sort-container">
+                <p class="sort-title">Sort by: </p>
+                <div class="container">
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <div class="custom-select__trigger"><span>Name</span>
+                            </div>
+                            <div class="custom-options" id="sort">
+                                <span class="custom-option sort selected"
+                                    data-sort="project-name-last">Name<br /></span>
+                                <span class="custom-option sort" data-sort="project-title" id="grad-year">Graduation
+                                    Year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin:0;" />
+        <ul class="list brick-grid-content" id="myList">
+            <!--  <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2488.jpg" alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Bob McGinty</h3>
+               <div class="project-title">Graduating Year: <span class="project-title">	1989</span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#" data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg" alt="brick location">           
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li>
+         <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2489.jpg" alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Ted Szczurek</h3>
+               <div class="project-title">Graduating Year: <span class="project-title">	</span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#" data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg" alt="brick location">           
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li>
+         <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2489.jpg" alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Anna Toccaceli</h3>
+               <div class="project-title">Graduating Year: <span class="project-title">	</span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#" data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg" alt="brick location">           
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li>
+         <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2489.jpg" alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Micahel Szczurek</h3>
+               <div class="project-title">Graduating Year: <span class="project-title">	2006</span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#" data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg" alt="brick location">           
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li>
+         -->
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2502.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Debbie <span class="project-name-last">Hartung</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1973</span></div>
+                    <p class="project-label">Brick location: B</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-B-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-B-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2508.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Nicholas <span class="project-name-last">Zachary</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1995</span></div>
+                    <p class="project-label">Brick location: B</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-B-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-B-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2511.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Jim <span class="project-name-last">Reamer</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1969</span></div>
+                    <p class="project-label">Brick location: C</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-C-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-C-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2503.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Christina <span class="project-name-last">Marko</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2004</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <!-- <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2494.jpg"
+               alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Jane <span class="project-name-last">Marchetti</span></h3>
+               <div class="project-title">Graduating Year: <span class="project-title"> 1971 2006 </span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#"
+                  data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img
+                     src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                     alt="brick location">
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li>
+         <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2494.jpg"
+               alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Phillip <span class="project-name-last">Marchetti</span></h3>
+               <div class="project-title">Graduating Year: <span class="project-title"> 1974</span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#"
+                  data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img
+                     src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                     alt="brick location">
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li>
+         <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2494.jpg"
+               alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Tony <span class="project-name-last">Marchetti</span></h3>
+               <div class="project-title">Graduating Year: <span class="project-title"> 1996 2002 </span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#"
+                  data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img
+                     src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                     alt="brick location">
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li>
+         <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2494.jpg"
+               alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Michael <span class="project-name-last">Marchetti</span></h3>
+               <div class="project-title">Graduating Year: <span class="project-title"> 1997 2002 </span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#"
+                  data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img
+                     src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                     alt="brick location">
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li>
+         <li>
+            <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2494.jpg"
+               alt="brick" />
+            <div class="brick-details">
+               <h3 class="project-name">Patrick <span class="project-name-last">Marchetti</span></h3>
+               <div class="project-title">Graduating Year: <span class="project-title"> 2005</span></div>
+               <p class="project-label">Brick location: D</p>
+            </div>
+            <div class="brick-location">
+               <a href="#"
+                  data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                  <img
+                     src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                     alt="brick location">
+                  <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+               </a>
+            </div>
+         </li> -->
+
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2507.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Chrissy <span class="project-name-last">Strassberger</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2001</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2507.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Tom <span class="project-name-last">Strassberger</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2001</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2500.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">David <span class="project-name-last">Pennella</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1977</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2510.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Daryl <span class="project-name-last">Fair</span></h3>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2510.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Barbara <span class="project-name-last">Kibler</span></h3>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2492.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Beth <span class="project-name-last">Watov</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1996</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2492.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Jeffrey <span class="project-name-last">Mitchell</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1996</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2518.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Bill <span class="project-name-last">Hoover</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1974</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2491.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Michael <span class="project-name-last">Sabbatini</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1993</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2491.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Nicole <span class="project-name-last">Sabbatini</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2000</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2501.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Heather <span class="project-name-last">Fehn</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1994 1996 </span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2495.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Barbara <span class="project-name-last">Gitenstein</span></h3>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2495.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Donald <span class="project-name-last">Hart</span></h3>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2516.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Bridy <span class="project-name-last">Hackett</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1999</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2515.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Kevin <span class="project-name-last">Detrizio</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2006</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2514.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Linda <span class="project-name-last">Matino</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1982</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2495b.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Felicia R <span class="project-name-last">Martin</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1992</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2481.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Travers 1 <span class="project-name-last">Low</h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2003</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2493.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Chi Upsilon <span class="project-name-last">Sigma</h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1990</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2496.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Ryan <span class="project-name-last">Lewis</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2006</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2497.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Kristen <span class="project-name-last">Lake</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2006</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2498.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Peter <span class="project-name-last">Indelicato</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2006</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2499.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Samantha <span class="project-name-last">Tai</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1997</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2504.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Joshua <span class="project-name-last">Riffe</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1998</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2506.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Frederick <span class="project-name-last">Baier</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1980</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2509.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Andrea <span class="project-name-last">Normandia</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 2003</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2512.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Stacy <span class="project-name-last">Holland</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1992</span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2513.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Ann <span class="project-name-last">King</span></h3>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2513.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Tracy <span class="project-name-last">King</span></h3>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2513.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">Robert <span class="project-name-last">King</span></h3>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/IMG_2517.jpg"
+                    alt="brick" />
+                <div class="brick-details">
+                    <h3 class="project-name">CV <span class="project-name-last">Jones</span></h3>
+                    <div class="project-title">Graduating Year: <span class="project-title"> 1982 1988 </span></div>
+                    <p class="project-label">Brick location: D</p>
+                </div>
+                <div class="brick-location">
+                    <a href="#"
+                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-D-FINAL-032020.svg">
+                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-D-FINAL-031620.svg"
+                            alt="brick location">
+                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <p id="not-found" style="display:none">Unable to locate any bricks by those search terms. For better
+            results, search by last name or graduating year.<br />
+            <br />Interested in purchasing a brick? Contact <a href="mailto:buber2@tcnj.edu">buber2@tcnj.edu</a>
+            or sign up via the links below: <br /><br />
+            <a class="hi-brand-button" target="_blank" style="padding:10px 15px!important"
+                href="https://tcnj.co1.qualtrics.com/jfe/form/SV_aVRiErW3Cpk9yIZ">Buy a 4x8 Brick</a>
+            <a class="hi-brand-button" target="_blank" style="padding:10px 15px!important"
+                href="https://tcnj.co1.qualtrics.com/jfe/form/SV_71J3t8zJJKVGsvj">Buy a 8x8 Brick</a>
+        </p>
+        <div class="page-numbers">
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+    <span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark"
+        class="mce_SELRES_start"></span></p>
+</div>
+<script>function copySearch() {
+        document.getElementById("search-results").value = document.querySelector(".search").value;
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="https://tcnj.edu/wp-content/themes/alumni-brick/js/dropdown.js"></script>
+<script src="https://tcnj.edu/wp-content/themes/alumni-brick/js/search-init-final5.js"></script>
+
+<script>function copySearch() {
+        document.getElementById("search-results").value = document.querySelector(".search").value;
+        var list = document.getElementById("myList");
+        var x = document.getElementById("not-found");
+
+        if (list.hasChildNodes()) {
+
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+
+        }
+
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript"
+    charset="utf-8"></script>
