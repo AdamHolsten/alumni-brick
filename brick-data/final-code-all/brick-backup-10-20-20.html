@@ -35,43 +35,7 @@
         <hr style="margin:0;" />
         <ul class="list brick-grid-content" id="myList">
 
-            <?php 
-          query_posts(array( 
-              'post_type' => 'brick_listing',
-          'order' => 'ASC'
-          ) );  
-          ?>
-            <?php while (have_posts()) : the_post(); ?>
 
-            <li>
-                <?php if(get_field('brick_image'))
-      {echo '<img class="brick-photo" src="' . get_field('brick_image') . '"
-      alt=" brick" loading="lazy" />';}
-      else {echo '<img class="brick-photo" src="https://tcnj.edu/wp-content/themes/alumni-brick/img/missing-bricks/missing-brick.jpg" alt="missing" loading="lazy"/>';
-      }
-                  ?>
-                <div class="brick-details">
-                    <h3 class="project-name"><?php echo get_the_title( $post_id ); ?></h3>
-                    <span class="project-name-last" style="display: none;"><?php echo get_field('last_name'); ?></span>
-                    <div class="project-title">Graduating Year: <span class="project-title"><?php if(get_field('graduation_year'))
-                                  {echo get_field('graduation_year');}
-                                  else {echo 'NA';
-                                  }
-                                              ?></span>
-                    </div>
-                    <p class="project-label">Brick location: <?php echo get_field('brick_location'); ?></p>
-                </div>
-                <div class="brick-location">
-                    <a href="#"
-                        data-featherlight="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-popup-section-<?php echo get_field('brick_location'); ?>-FINAL-032020.svg">
-                        <img src="https://tcnj.edu/wp-content/themes/alumni-brick/img/page-alumni-brick-finder-diagram-<?php echo get_field('brick_location'); ?>-FINAL-031620.svg"
-                            alt="brick location">
-                        <p><span class="desktop">View Larger</span><span class="mobile">VIEW LOCATION MAP</span></p>
-                    </a>
-                </div>
-            </li>
-
-            <?php endwhile;?>
 
             <li> <img class="brick-photo"
                     src="https://tcnj.edu/wp-content/themes/alumni-brick/img/a-bricks/2nd-compression/DSC_0571.jpg"
